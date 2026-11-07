@@ -1,7 +1,7 @@
 {
   "prompt_version": "veran_scenarios_v2.0",
   "reviewer": "Codex-assisted review; no independent human advisor study",
-  "source_manifest": "submission/pilot_manifest.json",
+  "source_manifest": "code/data/pilot_manifest.json",
   "cases": [
     {"case_id":"G01","label":"Pass","note":""},
     {"case_id":"PILOT-001","label":"Needs edit","note":"Outputs 1–3: long sentences and repeated hedging; candidate structures are similar."},

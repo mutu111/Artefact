@@ -9,7 +9,7 @@ PROJECT_ROOT = ROOT.parent
 SUBMISSION = PROJECT_ROOT / "submission"
 LOCAL_ROOT = PROJECT_ROOT / ".local"
 LOCAL_RUNS = LOCAL_ROOT / "runs"
-SOURCE = SUBMISSION / "prompt.md"
+SOURCE = ROOT / "data/prompt.md"
 PROMPT_VERSION = "veran_scenarios_v2.1"
 SCENARIOS = {
     "greeting": "生日与节日问候", "recommendation": "产品推荐",

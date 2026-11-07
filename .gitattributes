@@ -5,3 +5,5 @@
 *.html text eol=lf
 *.png binary
 *.cmd text eol=crlf
+*.xlsx binary
+*.pdf binary

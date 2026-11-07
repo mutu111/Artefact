@@ -52,13 +52,15 @@ class Handler(BaseHTTPRequestHandler):
         elif path in ("/", "/index.html"):
             self.send_file(WEB_ROOT / "index.html", "text/html; charset=utf-8")
         elif path == "/report/report.html":
-            self.send_file(PROJECT_ROOT / "打开报告.html", "text/html; charset=utf-8")
+            self.send_response(303)
+            self.send_header("Location", "/report/BDE_Methodology_Evaluation_Improvements.pdf")
+            self.end_headers()
         elif path.startswith("/report/"):
             candidate = (REPORT_ROOT / (path[len("/report/"):] or "report.html")).resolve()
             if not candidate.is_relative_to(REPORT_ROOT.resolve()):
                 self.send_error(403)
                 return
-            types = {".html": "text/html; charset=utf-8", ".json": "application/json; charset=utf-8", ".png": "image/png"}
+            types = {".pdf": "application/pdf", ".xlsx": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", ".json": "application/json; charset=utf-8", ".png": "image/png"}
             self.send_file(candidate, types.get(candidate.suffix, "application/octet-stream"))
         else:
             self.send_error(404)

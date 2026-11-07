@@ -2,7 +2,7 @@
 import json
 from pathlib import PureWindowsPath
 
-from veran_advisor.prompt_loader import LOCAL_RUNS, SUBMISSION
+from veran_advisor.prompt_loader import LOCAL_RUNS, ROOT
 
 META_FIELDS = (
     "version", "prompt_version", "run_id", "case_id", "scenario",
@@ -17,7 +17,7 @@ def read(path):
 
 
 def export_evidence():
-    target = SUBMISSION
+    target = ROOT / "data"
     target.mkdir(exist_ok=True)
     # A cloned repository already contains historical evidence, but not local logs.
     # Preserve that history when exporting new local runs.
