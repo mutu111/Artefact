@@ -1,8 +1,0 @@
-{
-  "case_id": "PILOT-001",
-  "scenario": "产品推荐",
-  "client_information": "小林；喜欢有设计感但容易搭配的单品。",
-  "conversation_history": [{"speaker": "客户", "message": "最近想找一件有设计感的西装，不想太正式。"}],
-  "product_information": {"name": "Offset Blazer", "details": "不对称门襟，版型松弛", "price_rmb": 6800},
-  "scenario_details": "推荐这件西装。没有提供颜色、面料、库存或优惠信息。"
-}

@@ -1,7 +1,6 @@
 # Confidential input and original local runtime records
 /private/
 /.local/
-/presentation/runtime/.local/
 /Written_Challenge_Brief.pdf
 
 # Python, environments and build products
