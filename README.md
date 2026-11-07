@@ -1,4 +1,4 @@
-# VÉRAN — Chinese WeChat Advisor Assistant
+# Artefact — VÉRAN Chinese WeChat Advisor Assistant
 
 A local message-drafting tool for a fictional, all-gender designer fashion brand. It covers six client-advisor scenarios and returns three short Chinese candidates for advisor review.
 
