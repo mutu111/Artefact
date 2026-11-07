@@ -1,13 +1,13 @@
-# VÉRAN — submission materials
+# Supporting records
 
-Open `report.html` to read the complete case. The report includes the work log, methodology, all 50 cases and 150 actual messages, evaluation, defects and before/after examples, and architecture.
+Read the **repository's main README** for the complete A–E results. It includes all 50 cases, actual Chinese messages, evaluation and before/after examples directly on GitHub.
 
-Supporting files:
+The root file `打开报告.html` is the complete standalone reading version. It contains all results, case search/filtering and the table columns specified in the brief.
 
-- `cases.json`: the 50 inputs and 150 original final-model messages.
-- `evaluation.json`: lightweight review; 40 groups Pass, 10 Needs edit, 0 Fail. Reviewer: Codex-assisted, not an independent advisor panel.
-- `brand.md`, `evaluation_method.md`, `work_log.md`, `prompt.md`: brand, method, process and detailed source prompt.
-- `recorded_runs.json`, `final_manifest.json`, `pilot_manifest.json`: portable original requests, outputs and selected metadata. Local commands, executable paths and terminal logs are excluded.
-- `run_evidence.html`: a viewer of an actual saved interaction, not an original chat screenshot.
+Files in this folder are supporting records, not the primary reading interface:
 
-Required screenshots and visual report QA remain pending. The report can be rebuilt from these files using the script in `../code/scripts/`. To generate new messages, double-click the launcher in the project root; Python, an authenticated local Codex CLI and network access are required.
+- `cases.json`, `evaluation.json`: machine-readable copies of the outputs and assisted review.
+- `brand.md`, `evaluation_method.md`, `work_log.md`, `prompt.md`: assumptions, method, process and source prompt.
+- `recorded_runs.json`, `final_manifest.json`, `pilot_manifest.json`: original requests, outputs, versions and portable metadata.
+
+Earlier AI-chat screenshots and generation/evaluation screenshots remain pending. No records are represented as screenshots.

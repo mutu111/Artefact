@@ -13,7 +13,7 @@ import uuid
 import webbrowser
 
 from .generate import validate_output
-from .prompt_loader import INPUT_FIELDS, LOCAL_ROOT, LOCAL_RUNS, PROMPT_VERSION, ROOT, SUBMISSION, assemble
+from .prompt_loader import INPUT_FIELDS, LOCAL_ROOT, LOCAL_RUNS, PROJECT_ROOT, PROMPT_VERSION, ROOT, SUBMISSION, assemble
 
 APP_ID = "veran-advisor-demo"
 GENERATION_LOCK = threading.Lock()
@@ -51,6 +51,8 @@ class Handler(BaseHTTPRequestHandler):
             self.respond(200, {"app": APP_ID, "prompt_version": PROMPT_VERSION})
         elif path in ("/", "/index.html"):
             self.send_file(WEB_ROOT / "index.html", "text/html; charset=utf-8")
+        elif path == "/report/report.html":
+            self.send_file(PROJECT_ROOT / "打开报告.html", "text/html; charset=utf-8")
         elif path.startswith("/report/"):
             candidate = (REPORT_ROOT / (path[len("/report/"):] or "report.html")).resolve()
             if not candidate.is_relative_to(REPORT_ROOT.resolve()):

@@ -41,6 +41,14 @@ class DemoTests(unittest.TestCase):
         status, _ = self.request("GET", "/report/../../private/Written_Challenge_Brief.pdf")
         self.assertEqual(status, 403)
 
+    def test_report_is_readable_document(self):
+        status, body = self.request("GET", "/report/report.html")
+        self.assertEqual(status, 200)
+        document = body.decode("utf-8")
+        self.assertIn('id="case-list"', document)
+        self.assertIn('id="evaluation"', document)
+        self.assertIn("候选 1", document)
+
     def test_invalid_scenario_rejected_without_inference(self):
         status, _ = self.request("POST", "/api/generate", json.dumps({"scenario": "unknown"}), {"Content-Type": "application/json"})
         self.assertEqual(status, 400)
