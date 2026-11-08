@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-08",
+  "type": "User-proposed manual edits; not model outputs or a new prompt version",
+  "revisions": [
+    {
+      "case_id": "X01",
+      "candidate": 2,
+      "original_v2_1": "您好，之前您提过对剪裁内容感兴趣。这份品牌设计介绍想分享给您，有空时随意翻翻。",
+      "manual_revision": "您好，之前记得您提过对剪裁内容感兴趣。我们这边正好新出了一份品牌设计介绍，您有空的时候可以简单看看，有需要随时可以联系。",
+      "note": "Manual wording suggestion. Use only after confirming that the brand introduction is newly released; this fact was not supplied in X01."
+    },
+    {
+      "case_id": "P01",
+      "candidate": 1,
+      "original_v2_1": "您关心折扣，我先帮您核实一下。",
+      "manual_revision": "嗯嗯，我们这边最近正好有活动，这件西装也是近期热门，折扣的问题我帮您核实下，有消息马上跟您讲。",
+      "note": "Manual wording suggestion. Use only after confirming a current promotion and the item's popularity; neither fact was supplied in P01. The item's discount still needs verification."
+    }
+  ]
+}
