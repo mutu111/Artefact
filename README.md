@@ -12,8 +12,8 @@ All project submission materials are in the **[submission folder](submission/)**
 | --- | --- | --- |
 | A | [A_Work_Log.xlsx](submission/A_Work_Log.xlsx) | Work log with eight main steps and screenshot evidence |
 | B | [B_Methodology.pdf](submission/B_Methodology.pdf) | Methodology, tool design and evaluation criteria |
-| C | [C_Test_Cases.xlsx](submission/C_Test_Cases.xlsx) | 50 test cases, inputs, 150 original messages and prompt versions |
-| D | [D_Evaluation.pdf](submission/D_Evaluation.pdf) | Evaluation results, issue cases and review limitations |
+| C | [C_Test_Cases.xlsx](submission/C_Test_Cases.xlsx) | 50 test cases, inputs and 150 original messages, all generated with prompt v2.1 |
+| D | [D_Evaluation.pdf](submission/D_Evaluation.pdf) | Evaluation results, issue cases, limitations and three supporting screenshots |
 | E | [E_Defects_and_Improvements.pdf](submission/E_Defects_and_Improvements.pdf) | Defects and improvements. Actual prompt revisions and manual wording suggestions are labeled separately. |
 
 Download the Excel files to view them. The PDFs can be previewed on GitHub. Report text is in English, and customer messages are in Chinese.
