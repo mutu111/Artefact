@@ -15,7 +15,7 @@ All project submission materials are in the **[submission folder](submission/)**
 | C | [C_Test_Cases.xlsx](submission/C_Test_Cases.xlsx) | 50 test cases, inputs and 150 original messages, all generated with prompt v2.1 |
 | D | [D_Evaluation.pdf](submission/D_Evaluation.pdf) | Evaluation results, issue cases, limitations and two supporting screenshots |
 | E | [E_Defects_and_Improvements.pdf](submission/E_Defects_and_Improvements.pdf) | Defects and improvements. Actual prompt revisions and manual wording suggestions are labeled separately. |
-| Bonus | [Architecture.pdf](submission/Architecture.pdf) | A simple diagram of the tool's input, Python backend, model generation, validation and output |
+| Bonus | [Bonus_Tool_Architecture.pdf](submission/Bonus_Tool_Architecture.pdf) | A simple diagram of the tool's input, Python backend, model generation, validation and output |
 
 Download the Excel files to view them. The PDFs can be previewed on GitHub. Report text is in English, and customer messages are in Chinese.
 
