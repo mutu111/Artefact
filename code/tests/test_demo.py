@@ -42,9 +42,11 @@ class DemoTests(unittest.TestCase):
         self.assertEqual(status, 403)
 
     def test_report_is_pdf(self):
-        status, body = self.request("GET", "/report/BDE_Methodology_Evaluation_Improvements.pdf")
-        self.assertEqual(status, 200)
-        self.assertTrue(body.startswith(b"%PDF"))
+        for filename in ("B_Methodology.pdf", "D_Evaluation.pdf", "E_Defects_and_Improvements.pdf"):
+            with self.subTest(filename=filename):
+                status, body = self.request("GET", "/report/" + filename)
+                self.assertEqual(status, 200)
+                self.assertTrue(body.startswith(b"%PDF"))
 
     def test_invalid_scenario_rejected_without_inference(self):
         status, _ = self.request("POST", "/api/generate", json.dumps({"scenario": "unknown"}), {"Content-Type": "application/json"})

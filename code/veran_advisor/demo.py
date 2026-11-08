@@ -51,9 +51,9 @@ class Handler(BaseHTTPRequestHandler):
             self.respond(200, {"app": APP_ID, "prompt_version": PROMPT_VERSION})
         elif path in ("/", "/index.html"):
             self.send_file(WEB_ROOT / "index.html", "text/html; charset=utf-8")
-        elif path == "/report/report.html":
+        elif path in ("/report/report.html", "/report/BDE_Methodology_Evaluation_Improvements.pdf"):
             self.send_response(303)
-            self.send_header("Location", "/report/BDE_Methodology_Evaluation_Improvements.pdf")
+            self.send_header("Location", "/report/B_Methodology.pdf")
             self.end_headers()
         elif path.startswith("/report/"):
             candidate = (REPORT_ROOT / (path[len("/report/"):] or "report.html")).resolve()
