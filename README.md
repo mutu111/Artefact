@@ -8,7 +8,7 @@
 
 | 部分 | 文件 | 内容 |
 | --- | --- | --- |
-| A | [A_Work_Log.xlsx](submission/A_Work_Log.xlsx) | 全部工作日志，19 个步骤 |
+| A | [A_Work_Log.xlsx](submission/A_Work_Log.xlsx) | 工作日志，8 个主要步骤，含待补截图位置 |
 | C | [C_Test_Cases.xlsx](submission/C_Test_Cases.xlsx) | 50 例输入、150 条模型原始话术及版本 |
 | B、D、E | [BDE_Methodology_Evaluation_Improvements.pdf](submission/BDE_Methodology_Evaluation_Improvements.pdf) | 四页报告：方法、评估、缺陷和修改前后对比，含架构图 |
 
