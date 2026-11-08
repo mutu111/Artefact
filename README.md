@@ -1,21 +1,32 @@
 # VÉRAN
 
-为虚构设计师品牌生成中文微信话术的客户顾问工具，覆盖六种沟通场景。
+Submission by **Dongyuan Mutu** for the **Applied AI Engineer: Written Challenge**.
 
-## 提交材料
+This project builds a client advisor tool for VÉRAN, a fictional designer brand. It generates three Chinese WeChat message candidates across six customer communication scenarios.
 
-所有阅读材料统一放在 **[submission 文件夹](submission/)**，只保留三份：
+## Submission
 
-| 部分 | 文件 | 内容 |
+All project submission materials are in the **[submission folder](submission/)**.
+
+| Part | File | Contents |
 | --- | --- | --- |
-| A | [A_Work_Log.xlsx](submission/A_Work_Log.xlsx) | 工作日志，8 个主要步骤，含待补截图位置 |
-| C | [C_Test_Cases.xlsx](submission/C_Test_Cases.xlsx) | 50 例输入、150 条模型原始话术及版本 |
-| B、D、E | [BDE_Methodology_Evaluation_Improvements.pdf](submission/BDE_Methodology_Evaluation_Improvements.pdf) | 四页报告：方法、评估、缺陷和修改前后对比，含架构图 |
+| A | [A_Work_Log.xlsx](submission/A_Work_Log.xlsx) | Work log with eight main steps and screenshot evidence |
+| C | [C_Test_Cases.xlsx](submission/C_Test_Cases.xlsx) | 50 test cases, inputs, 150 original messages and prompt versions |
+| B, D, E | [BDE_Methodology_Evaluation_Improvements.pdf](submission/BDE_Methodology_Evaluation_Improvements.pdf) | Methodology, evaluation results, defects and improvements. Actual prompt revisions and manual wording suggestions are labeled separately. |
 
-Excel 请下载后打开；PDF 可直接预览或下载。报告说明为英文，客户话术保持中文。截图证据的缺口已如实标注。
+Download the Excel files to view them. The PDF can be previewed on GitHub. Report text is in English, and customer messages are in Chinese.
 
-## 使用工具
+## Repository structure
 
-下载并解压仓库后，双击最外层的 **启动工具.cmd**。浏览器打开后，选择场景、填写新案例并生成三条候选话术。
+```text
+submission/       Required deliverables A-E
+code/             Python tool, web interface, prompts, test data and run records
+启动工具.cmd       Local tool launcher for Windows
+README.md         Project overview and submission guide
+```
 
-新生成需要 Python 3.10+、已登录的 Codex CLI 和网络。`code/` 保存实现、测试和原始依据；无需运行代码即可阅读提交材料。本机日志及题目 PDF 未上传。
+## Run the tool
+
+Download and extract the repository, then double-click **启动工具.cmd**. In the browser, choose a scenario, enter the case information and generate three message candidates with a separate advisor note.
+
+Generation requires Python 3.10+, an authenticated Codex CLI and an internet connection. The submission files can be viewed without running the tool.
